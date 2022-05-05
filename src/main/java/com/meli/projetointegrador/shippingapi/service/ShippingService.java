@@ -8,6 +8,6 @@ import java.util.List;
 @Service
 public interface ShippingService {
     List<Shipping> findAll();
-    Shipping findById();
+    Shipping findById(Long id) throws Exception;
     Shipping save(Shipping shipping);
 }
